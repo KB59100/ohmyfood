@@ -1,11 +1,13 @@
 /*Logo et titres: Shrikhand
 Texte: Roboto*/
 
-$primaire: #9356DC;
+$primaire: #9356DC;           /*variable*/
 $primaireSombre : lighten($primaire, 10%);        /*couleur qui asombrira le bouton*/
 $secondaire: #FF79DA;
 $secondaireSombre : lighten($secondaire, 10%);
 
+
+ 
 body{
   font-family : 'Roboto', sans-serif ;
 }
@@ -21,7 +23,7 @@ body{
   }
  
   article {
-  img{
+  img{                  /*imbrication car image et p et a dans article*/
     width: 100%;
     height: 10rem;
     border-radius: 15px 15px 0 0;
@@ -117,7 +119,7 @@ body{
       &:nth-last-of-type(#{$i})::before {
         content: "#{$i}";
       }
-      i{                      /*pour mettre les icones en grs et les espacer du titre*/
+      i{                      /*pour mettre les icones en gris et les espacer du titre*/
         color: #9e9e9e;
         padding: 1rem;
       }

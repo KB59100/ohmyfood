@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Logo et titres: Shrikhand
 Texte: Roboto*/
+/*variable*/
 /*couleur qui asombrira le bouton*/
 body {
   font-family: 'Roboto', sans-serif;
@@ -22,6 +23,7 @@ body {
 }
 
 article img {
+  /*imbrication car image et p et a dans article*/
   width: 100%;
   height: 10rem;
   border-radius: 15px 15px 0 0;
@@ -153,7 +155,7 @@ li:nth-last-of-type(1)::before {
 }
 
 li i {
-  /*pour mettre les icones en grs et les espacer du titre*/
+  /*pour mettre les icones en gris et les espacer du titre*/
   color: #9e9e9e;
   padding: 1rem;
 }
@@ -163,7 +165,7 @@ li:nth-last-of-type(2)::before {
 }
 
 li i {
-  /*pour mettre les icones en grs et les espacer du titre*/
+  /*pour mettre les icones en gris et les espacer du titre*/
   color: #9e9e9e;
   padding: 1rem;
 }
@@ -173,7 +175,7 @@ li:nth-last-of-type(3)::before {
 }
 
 li i {
-  /*pour mettre les icones en grs et les espacer du titre*/
+  /*pour mettre les icones en gris et les espacer du titre*/
   color: #9e9e9e;
   padding: 1rem;
 }
