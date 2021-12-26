@@ -1,5 +1,57 @@
-body{
-    background-color: red
-    ;
+/*variable*/
+$primaire: #9356DC;           
+$primaireClaire : lighten($primaire, 5%);        /*couleur qui asombrira le bouton*/
+$secondaire: #FF79DA;
+$secondaireClaire : lighten($secondaire, 5%);
+$tertiaire: #99E2D0;
+
+
+
+.visuel img{
+    width: 200px;
+  }
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    
+    img{
+      width: 100px;
+  }
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+
+button{
+  background: linear-gradient($secondaire, $primaire); /*pour le dégradé de couleur sur le bouton*/
+  border-style: none;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  white-space: nowrap;
+  transition: all .5s;         /*pour appliquer l'animation*/
+  &:hover{      /*on met un hover pour quand la souris passe sur le bouton*/
+    background: linear-gradient($secondaireClaire, $primaireClaire);    /*dégradé de couleur sombre au passage sur le bouton*/
+    box-shadow: 0 4px 7px #9e9e9e;                                    /*le contour du bouton qui fait une ombre au passage de la souris*/
+  }
+}
+} 
+
+
+
+
+
 

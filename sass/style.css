@@ -1,8 +1,76 @@
 @charset "UTF-8";
-/*Logo et titres: Shrikhand
-Texte: Roboto*/
+/*                                                      cahier des charges
+
+couleurs:
+primaire: #9356DC ...............
+secondaire: #FF79DA...............
+tertiaire: #99E2D0..................
+
+Logo et titres: Shrikhand
+Texte: Roboto  ............................
+
+
+Page d’accueil (x1)
+● Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
+localisation pour trouver des restaurants proches d’un certain lieu................................................
+● Une courte présentation de l’entreprise......................................
+● Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,
+l’utilisateur est redirigé vers la page du menu................................................
+
+
+Pages de menu (x4)
+● 4 pages contenant chacune le menu d’un restaurant.......................................
+
+
+Footer
+● Le footer est identique sur toutes les pages...................................
+● Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.........................
+
+
+Header
+● Le header est présent sur toutes les pages..............................
+● Sur la page d’accueil, il contient le logo du site..........................
+● Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil...........................
+
+
+
+                                                 Effets graphiques et animations
+
+
+
+Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser
+les animations ou transitions CSS, pas de JavaScript ni de librairie.
+
+
+
+Boutons
+● Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+L’ombre portée devra également être plus visible....................................................
+● À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
+bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
+remplir progressivement. Pour cette première version, l’effet peut être apparaître au
+survol sur desktop au lieu du clic.
+
+Page d’accueil
+● Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
+cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
+3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
+utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
+toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
+graphique du site.
+Pages de menu
+● À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
+décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
+“Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
+● Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.
+Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de
+la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
+sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
+des points de suspension. Un exemple de l’effet attendu est fourni.
+*/
 /*variable*/
 /*couleur qui asombrira le bouton*/
+/*animations*/
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -22,24 +90,8 @@ body {
   width: 50%;
 }
 
-article img {
-  /*imbrication car image et p et a dans article*/
-  width: 100%;
-  height: 10rem;
-  border-radius: 15px 15px 0 0;
-}
-
-article p {
-  font-size: 1rem;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
-}
-
-.visuel img {
-  width: 400px;
 }
 
 h1 {
@@ -78,8 +130,8 @@ button {
 
 button:hover {
   /*on met un hover pour quand la souris passe sur le bouton*/
-  background: -webkit-gradient(linear, left top, left bottom, from(#fface8), to(#ae80e5));
-  background: linear-gradient(#fface8, #ae80e5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
   /*dégradé de couleur sombre au passage sur le bouton*/
   -webkit-box-shadow: 0 4px 7px #9e9e9e;
           box-shadow: 0 4px 7px #9e9e9e;
@@ -131,6 +183,7 @@ p {
   font-size: 25px;
 }
 
+/*section fonctionnement*/
 li {
   border-radius: 20px;
   -webkit-box-shadow: 0 3px 5px 3px #ededed;
@@ -212,5 +265,18 @@ li:last-of-type i {
 ol {
   padding: 0;
   margin: 0 0 0 1rem;
+}
+
+/*section restaurants*/
+article img {
+  /*imbrication car image et p et a dans article*/
+  width: 100%;
+  height: 10rem;
+  border-radius: 15px 15px 0 0;
+}
+
+article p {
+  font-size: 1rem;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

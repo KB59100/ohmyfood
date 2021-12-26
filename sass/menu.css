@@ -1,4 +1,63 @@
-body {
-  background-color: red;
+@charset "UTF-8";
+/*variable*/
+/*couleur qui asombrira le bouton*/
+.visuel img {
+  width: 200px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  /*pour le dégradé de couleur sur le bouton*/
+  border-style: none;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  white-space: nowrap;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  /*pour appliquer l'animation*/
+}
+
+.btn button:hover {
+  /*on met un hover pour quand la souris passe sur le bouton*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background: linear-gradient(#ff93e1, #a16be0);
+  /*dégradé de couleur sombre au passage sur le bouton*/
+  -webkit-box-shadow: 0 4px 7px #9e9e9e;
+          box-shadow: 0 4px 7px #9e9e9e;
+  /*le contour du bouton qui fait une ombre au passage de la souris*/
 }
 /*# sourceMappingURL=menu.css.map */
