@@ -8,7 +8,7 @@ $tertiaire: #99E2D0;
 
 
 .visuel img{
-    width: 200px;
+    width: 100%;
   }
 
 .logo{
@@ -49,6 +49,53 @@ button{
   }
 }
 } 
+
+article{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+
+
+
+
+                                             /*foot*/
+
+footer{
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20em;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  h4{
+    font-family : 'Shrikhand', cursif ;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding: 1.5rem 1rem 0 1rem;
+  }
+  p{
+    color: white;
+    font-family : 'Roboto', sans-serif ;
+    padding-left: 1rem;
+  }
+  a{
+    color: white;
+  }
+  i{
+    width: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.3rem;
+  }
+}
 
 
 

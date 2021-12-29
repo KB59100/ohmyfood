@@ -176,7 +176,14 @@ label i {
   margin-right: 1rem;
 }
 
-p {
+h2 {
+  margin: 0;
+  padding: 2rem 1rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3 {
   margin: 0;
   padding: 2rem 1rem;
   font-weight: bold;
@@ -269,14 +276,199 @@ ol {
 
 /*section restaurants*/
 article img {
-  /*imbrication car image et p et a dans article*/
   width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 10rem;
-  border-radius: 15px 15px 0 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-article p {
-  font-size: 1rem;
+/*article {
+   cursor: pointer;
+    display: grid;
+    grid-template-areas: 
+    "image image"
+    "titre coeur"
+    "adresse coeur";
+    flex-direction: column;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px 3px #ededed;
+    grid-template-columns: 85% 15%;
+    max-width: 360px;
+    img{                 
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
+      object-fit: cover;
+      height: 10rem;
+      margin-left: auto;
+      margin-right: auto;
+      grid-area: image;
+    }
+    p{
+      grid-area: titre;
+      font-size: 1rem;
+      padding: 1rem 1rem 0.5rem 1rem;
+      margin: 0;
+      height: 200px;
+      width: 100%;
+    }
+    i{
+      grid-area: coeur;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: left;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+    .adresse{
+      grid-area: adresse;
+      margin: 0;
+      padding: 0 1rem 1rem 1rem;
+      font-style: normal;
+      font-size: 1.3rem;
+      height: 200px;
+    }
+    }*/
+/*foot*/
+footer {
+  background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 20em;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
   padding: 0;
+}
+
+footer h4 {
+  font-family: 'Shrikhand', cursif;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+footer p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 1rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  width: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.3rem;
+}
+
+/*LOADER*/
+#loader {
+  /*un # car cest un id et non une class*/
+  background-color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  -webkit-animation: afficheLoader 3s forwards;
+          animation: afficheLoader 3s forwards;
+}
+
+#loader #loaderi {
+  -webkit-animation: rotateLoader 3s;
+          animation: rotateLoader 3s;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9356DC;
+  border: 1px solid #9356DC;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes afficheLoader {
+  0% {
+    height: 100vh;
+  }
+  99% {
+    height: 100vh;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes afficheLoader {
+  0% {
+    height: 100vh;
+  }
+  99% {
+    height: 100vh;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@-webkit-keyframes rotateLoader {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotateLoader {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

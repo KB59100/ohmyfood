@@ -165,7 +165,14 @@ body{
     }
   }
 
-  p{
+  h2{
+    margin: 0;
+    padding: 2rem 1rem;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  h3{
     margin: 0;
     padding: 2rem 1rem;
     font-weight: bold;
@@ -218,17 +225,163 @@ body{
   
 
                                                    /*section restaurants*/
-
-
-
-  article {
-    img{                  /*imbrication car image et p et a dans article*/
+   article{
+   img{                 
       width: 100%;
+      border-radius: 1rem 1rem 0 0;
+      object-fit: cover;
       height: 10rem;
-      border-radius: 15px 15px 0 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+
+
+  /*article {
+   cursor: pointer;
+    display: grid;
+    grid-template-areas: 
+    "image image"
+    "titre coeur"
+    "adresse coeur";
+    flex-direction: column;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px 3px #ededed;
+    grid-template-columns: 85% 15%;
+    max-width: 360px;
+    img{                 
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
+      object-fit: cover;
+      height: 10rem;
+      margin-left: auto;
+      margin-right: auto;
+      grid-area: image;
     }
     p{
+      grid-area: titre;
       font-size: 1rem;
-      padding: 0;
+      padding: 1rem 1rem 0.5rem 1rem;
+      margin: 0;
+      height: 200px;
+      width: 100%;
     }
+    i{
+      grid-area: coeur;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: left;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: normal;
     }
+    .adresse{
+      grid-area: adresse;
+      margin: 0;
+      padding: 0 1rem 1rem 1rem;
+      font-style: normal;
+      font-size: 1.3rem;
+      height: 200px;
+    }
+    }*/
+
+
+
+                                             /*foot*/
+
+footer{
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20em;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  h4{
+    font-family : 'Shrikhand', cursif ;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding: 1.5rem 1rem 0 1rem;
+  }
+  p{
+    color: white;
+    font-family : 'Roboto', sans-serif ;
+    padding-left: 1rem;
+  }
+  a{
+    color: white;
+  }
+  i{
+    width: 2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.3rem;
+  }
+}
+
+
+
+                                   /*LOADER*/
+                                   
+
+#loader{               /*un # car cest un id et non une class*/
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  animation: afficheLoader 3s forwards;
+  #loaderi{
+    animation: rotateLoader 3s;
+    width: 4rem;
+    height: 4rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: $primaire;
+    border: 1px solid $primaire;
+    border-radius: 50%;
+  }
+}
+
+
+@keyframes afficheLoader {
+  0%{
+    height: 100vh;
+  }
+  99%{
+    height: 100vh;
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+@keyframes rotateLoader {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}
+
+
+
+    
