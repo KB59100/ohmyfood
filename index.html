@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,101 +15,105 @@
 
 
 <body>
-   <div class="logo"> <img src="images\ohmyfood.png"> </div> 
+    <div class="logo"> <img src="images\ohmyfood.png"> </div>
 
-   <label>
-       <i class="fas fa-map-marker-alt"></i>
-    <input type="text" id="maRecherche" name="ville" placeholder="Paris,Belleville" required />
-   </label>
-
-
-<h1>Réservez le menu qui vous convient</h1>
-
-<aside>Découvrez des restaurants d'exceptions, selectionnés par nos soins</aside>
-
-<div class="btn">
-<button>Explorer nos restaurants</button>
-</div>
-
-<h2>Fonctionnement</h2>
-
-<ol>                                             <!--liste numérotée-->
-    <li><i class="fas fa-mobile-alt" aria-hidden="true"></i>Choisissez un restaurant</li>
-    <li><i class="fas fa-list" aria-hidden="true"></i>Composez votre menu</li>
-    <li><i class="fas fa-store" aria-hidden="true"></i>Dégustez au restaurant</li>
-</ol>
+    <label>
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" id="maRecherche" name="ville" placeholder="Paris,Belleville" required />
+    </label>
 
 
-<h3>Restaurants</h3>
+    <h1>Réservez le menu qui vous convient</h1>
 
-<article>
-<a href="lapalette.html">
+    <aside>Découvrez des restaurants d'exceptions, selectionnés par nos soins</aside>
 
-  
-        <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-    
-    <p>La palette du goût</p>
-    <i class="far fa-heart" aria-hidden="true"></i>
-    <p class="adresse">Ménilmontant</p>
-</a>
-</article>
+    <div class="btn">
+        <button>Explorer nos restaurants</button>
+    </div>
 
+    <h2>Fonctionnement</h2>
 
-
-<article>
-    <a href="lanote.html">
-  
-        <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-   
-    <p>La note enchantée</p>
-    <i class="far fa-heart" aria-hidden="true"></i>
-    <p>Charonne</p>
-</a>
-</article>
+    <ol>
+        <!--liste numérotée-->
+        <li><p>1</p><i class="fas fa-mobile-alt" aria-hidden="true"></i>Choisissez un restaurant</li>
+        <li><i class="fas fa-list" aria-hidden="true"></i>Composez votre menu</li>
+        <li><i class="fas fa-store" aria-hidden="true"></i>Dégustez au restaurant</li>
+        
+    </ol>
 
 
+    <h3>Restaurants</h3>
 
-<article>
-<a href="alafrancaise.html">
-  
-    <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+    <a href="lapalette.html">
+        <article> <!--position relative du coup nouveau en position absolute...-->
+            <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+            <div class="container-menu"> <!--mettre un display flex jutify content space betwen with 100% ...-->
+                <div class="restaurant-description">
+                    <p>Nouveau</p> 
+                    <h2 class="titre-restaurant">La palette du goût</h2>
+                    <p class="adresse">Ménilmontant</p>
+                </div>
+                <div class="container-coeur"> <i class="far fa-heart" aria-hidden="true"></i></div>
+            </div>
+        </article>
+    </a>
 
-<p>A la française</p>
-<i class="far fa-heart" aria-hidden="true"></i>
-<p>Cité Rouge</p>
-</a>
-</article>
+
+    <article>
+        <a href="lanote.html">
+
+            <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+
+            <p>La note enchantée</p>
+            <i class="far fa-heart" aria-hidden="true"></i>
+            <p>Charonne</p>
+
+    </article>
+    </a>
 
 
+    <article>
+        <a href="alafrancaise.html">
 
-<article>
-<a href="ledelice.html">
-  
-    <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+            <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
 
-<p>Le délice des sens</p>
-<i class="far fa-heart" aria-hidden="true"></i>
-<p>Folie-Méricourt</p>
-</a>
-</article>
+            <p>A la française</p>
+            <i class="far fa-heart" aria-hidden="true"></i>
+            <p>Cité Rouge</p>
+        </a>
+    </article>
 
 
 
+    <article>
+        <a href="ledelice.html">
+
+            <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+
+            <p>Le délice des sens</p>
+            <i class="far fa-heart" aria-hidden="true"></i>
+            <p>Folie-Méricourt</p>
+        </a>
+    </article>
 
 
-<footer>
-<h4>ohmyfood</h4>
-<p> <i class="fas fa-utensils" aria-hidden="true"></i>Proposer un restaurant</p>
-<p> <i class="fas fa-hands-helping" aria-hidden="true"></i>Devenir partenaire</p>
-<p>Mentions légales</p>
-<p> <a href="contact@exemple.com">Contact</a></p>
-</footer>
 
 
 
-<div id="loader">
-    <i class="fas fa-utensils" id="loaderi"></i>
-</div>
+    <footer>
+        <h4>ohmyfood</h4>
+        <p> <i class="fas fa-utensils" aria-hidden="true"></i>Proposer un restaurant</p>
+        <p> <i class="fas fa-hands-helping" aria-hidden="true"></i>Devenir partenaire</p>
+        <p>Mentions légales</p>
+        <p> <a href="contact@exemple.com">Contact</a></p>
+    </footer>
+
+
+
+    <div id="loader">
+        <i class="fas fa-utensils" id="loaderi"></i>
+    </div>
 
 </body>
+
 </html>

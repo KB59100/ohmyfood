@@ -181,7 +181,7 @@ body{
 
                                                           /*section fonctionnement*/
 
-  li{
+ /* li{
     border-radius: 20px;
     box-shadow: 0 3px 5px 3px #ededed;
     background-color: #f6f6f6;
@@ -190,16 +190,16 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    @for $i from 1 through 3 {   /*pour mettre sur les chiffres de 1 a 3 sur chaque ligne*/
+    @for $i from 1 through 3 {   
       &:nth-last-of-type(#{$i})::before {
         content: "#{$i}";
       }
-      i{                      /*pour mettre les icones en gris et les espacer du titre*/
+      i{                      
         color: #9e9e9e;
         padding: 1rem;
       }
     }
-  &::before{  /*pour entouré les chiffres, bien les placer et leur mettre le background*/
+  &::before{  
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
@@ -211,7 +211,7 @@ body{
     margin-left: -0.5rem;
     color: white;
   }
-  &:last-of-type {              /*pour mettre le dernier en violet*/
+  &:last-of-type {             
     background-color: #f5edff;
     & i {
        color: $primaire;
@@ -221,7 +221,7 @@ body{
   ol{
     padding: 0;
     margin: 0 0 0 1rem;
-  }
+  }*/
   
 
                                                    /*section restaurants*/
@@ -236,63 +236,6 @@ body{
     }
   }
 
-
-
-
-
-  /*article {
-   cursor: pointer;
-    display: grid;
-    grid-template-areas: 
-    "image image"
-    "titre coeur"
-    "adresse coeur";
-    flex-direction: column;
-    margin: 0 auto 2rem auto;
-    padding: 0;
-    width: 100%;
-    justify-content: space-evenly;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 3px 5px 3px #ededed;
-    grid-template-columns: 85% 15%;
-    max-width: 360px;
-    img{                 
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
-      object-fit: cover;
-      height: 10rem;
-      margin-left: auto;
-      margin-right: auto;
-      grid-area: image;
-    }
-    p{
-      grid-area: titre;
-      font-size: 1rem;
-      padding: 1rem 1rem 0.5rem 1rem;
-      margin: 0;
-      height: 200px;
-      width: 100%;
-    }
-    i{
-      grid-area: coeur;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: left;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-    .adresse{
-      grid-area: adresse;
-      margin: 0;
-      padding: 0 1rem 1rem 1rem;
-      font-style: normal;
-      font-size: 1.3rem;
-      height: 200px;
-    }
-    }*/
 
 
 
@@ -346,9 +289,9 @@ footer{
   height: 100vh;
   overflow: hidden;
   top: 0;
-  animation: afficheLoader 3s forwards;
+  animation: afficheLoader 3s forwards; /*animation plus durée*/
   #loaderi{
-    animation: rotateLoader 3s;
+    animation: rotateLoader 3s; /*animation plus durée*/
     width: 4rem;
     height: 4rem;
     display: flex; 
@@ -361,7 +304,7 @@ footer{
 }
 
 
-@keyframes afficheLoader {
+@keyframes afficheLoader {     /*pour afficher le loader au milieu de la page et qu'il disparaisse*/
   0%{
     height: 100vh;
   }
@@ -373,7 +316,7 @@ footer{
   }
 }
 
-@keyframes rotateLoader {
+@keyframes rotateLoader { /*pour que le loader tourne*/
   from{
     transform: rotate(0deg);
   }
