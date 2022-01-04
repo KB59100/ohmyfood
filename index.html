@@ -15,7 +15,7 @@
 
 
 <body>
-    <div class="logo"> <img src="images\ohmyfood.png"> </div>
+    <div class="logo">ohmyfood </div>
 
     <label>
         <i class="fas fa-map-marker-alt"></i>
@@ -31,26 +31,34 @@
         <button>Explorer nos restaurants</button>
     </div>
 
-    <h2>Fonctionnement</h2>
-
-    <ol>
-        <!--liste numérotée-->
-        <li><p>1</p><i class="fas fa-mobile-alt" aria-hidden="true"></i>Choisissez un restaurant</li>
-        <li><i class="fas fa-list" aria-hidden="true"></i>Composez votre menu</li>
-        <li><i class="fas fa-store" aria-hidden="true"></i>Dégustez au restaurant</li>
-        
-    </ol>
+    <section id="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <ol>
+            <!--liste numérotée-->
+            <li>
+                <p>1</p><i class="fas fa-mobile-alt" aria-hidden="true"></i>Choisissez un restaurant
+            </li>
+            <li>
+                <p>2</p><i class="fas fa-list" aria-hidden="true"></i>Composez votre menu
+            </li>
+            <li class="violet">
+                <p>3</p><i class="fas fa-store" aria-hidden="true"></i>Dégustez au restaurant
+            </li>
+        </ol>
+    </section>
 
 
     <h3>Restaurants</h3>
 
     <a href="lapalette.html">
-        <article> <!--position relative du coup nouveau en position absolute...-->
+        <article>
+            <!--position relative du coup nouveau en position absolute...-->
             <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-            <div class="container-menu"> <!--mettre un display flex jutify content space betwen with 100% ...-->
+            <div class="menu">
+                <!--mettre un display flex jutify content space betwen with 100% ...-->
                 <div class="restaurant-description">
-                    <p>Nouveau</p> 
-                    <h2 class="titre-restaurant">La palette du goût</h2>
+                    <p class="nouveau">Nouveau</p>
+                    <h4>La palette du goût</h4>
                     <p class="adresse">Ménilmontant</p>
                 </div>
                 <div class="container-coeur"> <i class="far fa-heart" aria-hidden="true"></i></div>
@@ -61,25 +69,29 @@
 
     <article>
         <a href="lanote.html">
-
             <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-
-            <p>La note enchantée</p>
-            <i class="far fa-heart" aria-hidden="true"></i>
-            <p>Charonne</p>
-
+            <div class="menu">
+                <div class="restaurant-description">
+                    <p class="nouveau">Nouveau</p>
+                    <h4>La note enchantée</h4>
+                    <p>Charonne</p>
+                </div>
+                <div class="container-coeur"><i class="far fa-heart" aria-hidden="true"></i></div>
+            </div>
     </article>
     </a>
 
 
     <article>
         <a href="alafrancaise.html">
-
             <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
-
-            <p>A la française</p>
-            <i class="far fa-heart" aria-hidden="true"></i>
-            <p>Cité Rouge</p>
+            <div class="menu">
+                <div class="restaurant-description">
+                    <h4>A la française</h4>
+                    <p>Cité Rouge</p>
+                </div>
+                <div class="container-coeur"><i class="far fa-heart" aria-hidden="true"></i></div>
+            </div>
         </a>
     </article>
 
@@ -89,10 +101,13 @@
         <a href="ledelice.html">
 
             <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-
-            <p>Le délice des sens</p>
-            <i class="far fa-heart" aria-hidden="true"></i>
-            <p>Folie-Méricourt</p>
+            <div class="menu">
+                <div class="restaurant-description">
+                    <h4>Le délice des sens</h4>
+                    <p>Folie-Méricourt</p>
+                </div>
+                <div class="container-coeur"><i class="far fa-heart" aria-hidden="true"></i></div>
+            </div>
         </a>
     </article>
 

@@ -83,11 +83,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 25px auto 15px auto;
-}
-
-.logo img {
-  /*taille du logo*/
-  width: 50%;
+  font-family: 'Shrikhand', cursif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
 }
 
 a {
@@ -191,7 +190,27 @@ h3 {
 }
 
 /*section fonctionnement*/
-li {
+#fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#fonctionnement i {
+  color: #9e9e9e;
+  padding: 1rem;
+}
+
+#fonctionnement ol {
+  margin: 0;
+  padding: 0 1rem;
+}
+
+#fonctionnement li {
   border-radius: 20px;
   -webkit-box-shadow: 0 3px 5px 3px #ededed;
           box-shadow: 0 3px 5px 3px #ededed;
@@ -207,34 +226,7 @@ li {
   margin-bottom: 1rem;
 }
 
-li:nth-last-of-type(1)::before {
-  content: "1";
-}
-
-li i {
-  color: #9e9e9e;
-  padding: 1rem;
-}
-
-li:nth-last-of-type(2)::before {
-  content: "2";
-}
-
-li i {
-  color: #9e9e9e;
-  padding: 1rem;
-}
-
-li:nth-last-of-type(3)::before {
-  content: "3";
-}
-
-li i {
-  color: #9e9e9e;
-  padding: 1rem;
-}
-
-li::before {
+#fonctionnement p {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -245,7 +237,7 @@ li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,20 +245,48 @@ li::before {
   color: white;
 }
 
-li:last-of-type {
+#fonctionnement .violet {
   background-color: #f5edff;
 }
 
-li:last-of-type i {
+#fonctionnement .violet i {
   color: #9356DC;
 }
 
-ol {
-  padding: 0;
-  margin: 0 0 0 1rem;
+/*section restaurants*/
+article {
+  position: relative;
 }
 
-/*section restaurants*/
+article .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+article .restaurant-description .nouveau {
+  position: relative;
+  background-color: #99e2d0;
+  height: 25px;
+  width: 100px;
+  color: #0c8e6e;
+  margin-top: -150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 195px;
+}
+
 article img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
@@ -277,59 +297,6 @@ article img {
   margin-right: auto;
 }
 
-/*article {
-   cursor: pointer;
-    display: grid;
-    grid-template-areas: 
-    "image image"
-    "titre coeur"
-    "adresse coeur";
-    flex-direction: column;
-    margin: 0 auto 2rem auto;
-    padding: 0;
-    width: 100%;
-    justify-content: space-evenly;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 3px 5px 3px #ededed;
-    grid-template-columns: 85% 15%;
-    max-width: 360px;
-    img{                 
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
-      object-fit: cover;
-      height: 10rem;
-      margin-left: auto;
-      margin-right: auto;
-      grid-area: image;
-    }
-    p{
-      grid-area: titre;
-      font-size: 1rem;
-      padding: 1rem 1rem 0.5rem 1rem;
-      margin: 0;
-      height: 200px;
-      width: 100%;
-    }
-    i{
-      grid-area: coeur;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: left;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-    .adresse{
-      grid-area: adresse;
-      margin: 0;
-      padding: 0 1rem 1rem 1rem;
-      font-style: normal;
-      font-size: 1.3rem;
-      height: 200px;
-    }
-    }*/
 /*foot*/
 footer {
   background-color: #353535;
@@ -380,7 +347,8 @@ footer i {
 /*LOADER*/
 #loader {
   /*un # car cest un id et non une class*/
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: white;
+  /*pour ne plus rien voir lors du chargement de la page*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
