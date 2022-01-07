@@ -189,6 +189,18 @@ h3 {
   font-size: 25px;
 }
 
+.background {
+  background-color: #f6f6f6;
+}
+
+.background article {
+  background-color: white;
+  margin-bottom: 2rem;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-box-shadow: 0 3px 5px 3px #ededed;
+          box-shadow: 0 3px 5px 3px #ededed;
+}
+
 /*section fonctionnement*/
 #fonctionnement {
   display: -webkit-box;
@@ -285,6 +297,19 @@ article .restaurant-description .nouveau {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 195px;
+}
+
+article .restaurant-description .paddingH4 {
+  padding-top: 7rem;
+  color: black;
+}
+
+article .restaurant-description p {
+  color: black;
+}
+
+article .restaurant-description h4 {
+  color: black;
 }
 
 article img {

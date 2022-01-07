@@ -177,6 +177,15 @@ body{
     font-weight: bold;
     font-size: 25px;
   }
+  .background{
+    background-color: #f6f6f6;
+    article{
+      background-color: white;
+      margin-bottom: 2rem;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow: 0 3px 5px 3px #ededed;
+    }
+   }
 
                                                           /*section fonctionnement*/
    
@@ -231,6 +240,7 @@ body{
      justify-content: space-between;
      width: 100%;
    }
+   
    .restaurant-description{
      .nouveau{
        position: relative;
@@ -243,7 +253,16 @@ body{
        align-items: center;
        justify-content: center;
        margin-left: 195px;
-
+     }
+     .paddingH4{
+       padding-top: 7rem;
+       color: black;
+     }
+     p{
+       color: black;
+     }
+     h4{
+       color: black;
      }
    }
    img{                 
