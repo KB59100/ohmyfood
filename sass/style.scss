@@ -209,6 +209,13 @@ body{
       display: flex;
       align-items: center;
       margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    li:hover{
+      background-color: #f5edff;
+      i{
+        color: $primaire;
+      }
     }
     p{
       width: 1.5rem;
@@ -222,12 +229,6 @@ body{
       margin-left: -0.5rem;
       color: white;
     }
-    .violet{
-      background-color: #f5edff;
-      i{
-        color: $primaire;
-      }
-    }
   }
 
   
@@ -239,23 +240,48 @@ body{
      display: flex;
      justify-content: space-between;
      width: 100%;
+     align-items: center;
+
+   }
+   .fa-heart{
+     font-size: 25px;
+   }
+
+   .container-coeur{
+    position: relative;
+    font-size: 25px;
+    color: linear-gradient(#FF79DA, #9356DC);
+   }
+   .coeur-plein{
+     position:absolute;
+  transform:scale(0);
+     transition-duration: 1000ms;
+   }
+
+   .container-coeur:hover .coeur-plein {
+    transform:scale(1);     
+   }
+
+   .coeur-vide{
+    transition-duration: 1000ms;
+   }
+
+   .container-coeur:hover .coeur-vide {
+    transform:scale(0);
    }
    
    .restaurant-description{
      .nouveau{
-       position: relative;
+       position:absolute;
        background-color: #99e2d0;
-       height: 25px;
-       width: 100px;
+       padding: 8px;
+       top :0;
+       right: 0;
+       margin-right: 5px;
        color: #0c8e6e;
-       margin-top: -150px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-left: 195px;
      }
      .paddingH4{
-       padding-top: 7rem;
+      
        color: black;
      }
      p{
@@ -263,6 +289,8 @@ body{
      }
      h4{
        color: black;
+       line-height: 0;
+      
      }
    }
    img{                 
@@ -273,7 +301,13 @@ body{
       margin-left: auto;
       margin-right: auto;
     }
+    @media all and (min-width: 768px) and (max-width: 2500px){
+      img{
+        height: 20rem;
+      }
+    }
   }
+  
 
 
 

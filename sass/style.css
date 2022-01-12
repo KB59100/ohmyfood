@@ -236,6 +236,15 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#fonctionnement li:hover {
+  background-color: #f5edff;
+}
+
+#fonctionnement li:hover i {
+  color: #9356DC;
 }
 
 #fonctionnement p {
@@ -257,14 +266,6 @@ h3 {
   color: white;
 }
 
-#fonctionnement .violet {
-  background-color: #f5edff;
-}
-
-#fonctionnement .violet i {
-  color: #9356DC;
-}
-
 /*section restaurants*/
 article {
   position: relative;
@@ -278,29 +279,55 @@ article .menu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-}
-
-article .restaurant-description .nouveau {
-  position: relative;
-  background-color: #99e2d0;
-  height: 25px;
-  width: 100px;
-  color: #0c8e6e;
-  margin-top: -150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 195px;
+}
+
+article .fa-heart {
+  font-size: 25px;
+}
+
+article .container-coeur {
+  position: relative;
+  font-size: 25px;
+  color: linear-gradient(#FF79DA, #9356DC);
+}
+
+article .coeur-plein {
+  position: absolute;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+article .container-coeur:hover .coeur-plein {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+article .coeur-vide {
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+article .container-coeur:hover .coeur-vide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+article .restaurant-description .nouveau {
+  position: absolute;
+  background-color: #99e2d0;
+  padding: 8px;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  color: #0c8e6e;
 }
 
 article .restaurant-description .paddingH4 {
-  padding-top: 7rem;
   color: black;
 }
 
@@ -310,6 +337,7 @@ article .restaurant-description p {
 
 article .restaurant-description h4 {
   color: black;
+  line-height: 0;
 }
 
 article img {
@@ -320,6 +348,12 @@ article img {
   height: 10rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media all and (min-width: 768px) and (max-width: 2500px) {
+  article img {
+    height: 20rem;
+  }
 }
 
 /*foot*/
