@@ -141,6 +141,15 @@ article div {
   /*pour mettre 3 petits points lorsque le texte est coupé*/
 }
 
+article div p {
+  white-space: nowrap;
+  /*pour qu'il ny ai pas de retour a la ligne si texte trop long*/
+  overflow: hidden;
+  /*pour couper le texte si trop long*/
+  text-overflow: ellipsis;
+  /*pour mettre 3 petits points lorsque le texte est coupé*/
+}
+
 article .titreGras {
   font-weight: bold;
 }

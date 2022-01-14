@@ -93,7 +93,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h2 {
   display: block;
   text-align: center;
   font-size: 25px;
@@ -175,7 +175,7 @@ label i {
   margin-right: 1rem;
 }
 
-h2 {
+h3 {
   margin: 0;
   padding: 2rem 1rem;
   font-weight: bold;
@@ -335,7 +335,7 @@ article .restaurant-description p {
   color: black;
 }
 
-article .restaurant-description h4 {
+article .restaurant-description h5 {
   color: black;
   line-height: 0;
 }
@@ -378,7 +378,7 @@ footer {
   padding: 0;
 }
 
-footer h4 {
+footer h6 {
   font-family: 'Shrikhand', cursif;
   color: white;
   font-size: 24px;
