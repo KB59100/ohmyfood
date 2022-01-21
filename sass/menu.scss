@@ -6,7 +6,9 @@ $secondaireClaire : lighten($secondaire, 5%);
 $tertiaire: #99E2D0;
 
 
-
+body{
+  font-family : 'Roboto', sans-serif ;
+}
 .visuel img{
     width: 100%;
   }
@@ -29,9 +31,49 @@ $tertiaire: #99E2D0;
 
 }
 
-a{
-    text-decoration: none;
-    color: black;
+h1{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.divCoeur{
+  display: flex;
+  margin-top: -4rem;
+  position: relative;
+  font-style: italic;
+  width: auto;
+  font-family: 'Shirkhand';
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+align-items: center
+}
+.container-coeur{
+  position: relative;
+  font-size: 25px;
+  color: linear-gradient(#FF79DA, #9356DC);
+ }
+ .coeur-plein{
+   position:absolute;
+transform:scale(0);
+   transition-duration: 1000ms;
+ }
+
+ .container-coeur:hover .coeur-plein {
+  transform:scale(1);
+ }
+
+ .coeur-vide{
+  transition-duration: 1000ms;
+ }
+
+ .container-coeur:hover .coeur-vide {
+  transform:scale(0);
+ }
+
+ a{
+  text-decoration: none;
+  color: black;
 }
 
 .btn{
@@ -60,30 +102,8 @@ button{
 main{
   background-color: #f6f6f6;
 }
-h1{
-  margin-top: -4rem;
-  position: relative;
-  font-style: italic;
-  width: auto;
-  font-family: 'Shirkhand';
-  display: flex;
-  justify-content: space-around;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
-  height: 3rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  i{
-    font-size: 25px;
-    font-weight: normal;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 2500px){
-  h1{
-    justify-content: space-evenly;
-    font-size: 3rem;
-  }
-}
+
+
 h2{
   margin: 0;
   padding: 2rem 0;
@@ -123,8 +143,48 @@ article{
     width: 2rem;
     align-items: flex-end;
   }
+  mark{
+    display: flex;
+    background-color: $tertiaire;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+    mark:hover{
+      animation: rotatecheck 0.5s ease-out forwards;
+    }
+    i{
+      background: white;
+      border-radius: 50%;
+      padding: 0.2rem;
+      color: $tertiaire;
+      cursor: pointer;
+      i:hover{
+        animation: checkover 0.5s ease-out forwards;
+      }
+    }  
+
+}
+    }
+
+@keyframes checkover{
+  from{
+    width: 0;
+  }
+  to{
+    width: 5rem;
+  }
 }
 
+
+@keyframes rotatecheck{
+  from{
+    transform: rotate(-360deg);
+  }
+  to{
+    transform: rotate(0);
+  }
+}
 
 
 
