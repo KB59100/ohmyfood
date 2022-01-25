@@ -101,6 +101,7 @@ h2 {
   width: 80%;
   margin: 0;
   padding: 1.5em 1em 0 1em;
+  font-family: 'Shrikhand', cursive;
 }
 
 aside {
@@ -350,12 +351,6 @@ article img {
   margin-right: auto;
 }
 
-@media all and (min-width: 768px) and (max-width: 2500px) {
-  article img {
-    height: 20rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   ul {
     display: -webkit-box;
@@ -372,7 +367,7 @@ article img {
             justify-content: space-between;
   }
   li {
-    width: 230px;
+    width: 300px;
   }
   h2 {
     margin-top: 30px;

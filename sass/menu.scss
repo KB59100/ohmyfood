@@ -34,6 +34,7 @@ body{
 h1{
   font-size: 1.8rem;
   font-weight: bold;
+  font-family : 'Shrikhand', cursive ;
 }
 .divCoeur{
   display: flex;
@@ -137,21 +138,21 @@ article{
   .titreGras{
     font-weight: bold;
   }
-  aside{
+  .prix{
     display: flex;
     height: 73%;
     width: 2rem;
     align-items: flex-end;
   }
-  mark{
+  .check{
     display: flex;
     background-color: $tertiaire;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     border-radius: 0 1rem 1rem 0;
-    mark:hover{
-      animation: rotatecheck 0.5s ease-out forwards;
+    i:hover{
+    animation: rotatecheck 0.5s ease-out forwards; 
     }
     i{
       background: white;
@@ -159,17 +160,17 @@ article{
       padding: 0.2rem;
       color: $tertiaire;
       cursor: pointer;
-      i:hover{
-        animation: checkover 0.5s ease-out forwards;
-      }
     }  
-
 }
+    }
+
+    .check:hover{
+      animation: checkover 1s ease-out forwards;
     }
 
 @keyframes checkover{
   from{
-    width: 0;
+    width: 1;
   }
   to{
     width: 5rem;

@@ -34,6 +34,7 @@ body {
 h1 {
   font-size: 1.8rem;
   font-weight: bold;
+  font-family: 'Shrikhand', cursive;
 }
 
 .divCoeur {
@@ -179,7 +180,7 @@ article .titreGras {
   font-weight: bold;
 }
 
-article aside {
+article .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +191,7 @@ article aside {
           align-items: flex-end;
 }
 
-article mark {
+article .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,12 +206,12 @@ article mark {
   border-radius: 0 1rem 1rem 0;
 }
 
-article mark mark:hover {
+article .check i:hover {
   -webkit-animation: rotatecheck 0.5s ease-out forwards;
           animation: rotatecheck 0.5s ease-out forwards;
 }
 
-article mark i {
+article .check i {
   background: white;
   border-radius: 50%;
   padding: 0.2rem;
@@ -218,14 +219,14 @@ article mark i {
   cursor: pointer;
 }
 
-article mark i i:hover {
-  -webkit-animation: checkover 0.5s ease-out forwards;
-          animation: checkover 0.5s ease-out forwards;
+.check:hover {
+  -webkit-animation: checkover 1s ease-out forwards;
+          animation: checkover 1s ease-out forwards;
 }
 
 @-webkit-keyframes checkover {
   from {
-    width: 0;
+    width: 1;
   }
   to {
     width: 5rem;
@@ -234,7 +235,7 @@ article mark i i:hover {
 
 @keyframes checkover {
   from {
-    width: 0;
+    width: 1;
   }
   to {
     width: 5rem;
