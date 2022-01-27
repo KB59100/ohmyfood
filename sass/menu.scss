@@ -120,15 +120,13 @@ article{
   background-color: white;
   border-radius: 1rem;
   margin: 1rem auto 1rem auto;
-  height: 5rem;
   justify-content: space-between;
-  div{
-    display: block;
-    margin-left: 1rem;
-    height: 100%;
-    white-space: nowrap; /*pour qu'il ny ai pas de retour a la ligne si texte trop long*/
-    overflow: hidden; /*pour couper le texte si trop long*/
-    text-overflow: ellipsis;  /*pour mettre 3 petits points lorsque le texte est coupé*/
+  overflow: hidden;
+  cursor: pointer;
+  animation: arrivéePlats 3s forwards;
+  .menu{
+    width: 130px;
+    flex: 1;
   p{
     white-space: nowrap; /*pour qu'il ny ai pas de retour a la ligne si texte trop long*/
     overflow: hidden; /*pour couper le texte si trop long*/
@@ -140,54 +138,43 @@ article{
   }
   .prix{
     display: flex;
-    height: 73%;
-    width: 2rem;
-    align-items: flex-end;
+    align-items: center;
+    width: 40px;
   }
   .check{
     display: flex;
     background-color: $tertiaire;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
-    border-radius: 0 1rem 1rem 0;
-    i:hover{
-    animation: rotatecheck 0.5s ease-out forwards; 
+    width: 0;
+    transition: all 1s;
+    .fa-check-circle{
+      color: white;
+      font-size: xx-large;
+      transition: transform 1s;
+      -webkit-transform: rotate(-1turn);
     }
-    i{
-      background: white;
-      border-radius: 50%;
-      padding: 0.2rem;
-      color: $tertiaire;
-      cursor: pointer;
-    }  
-}
+    }
+    }
+    article:hover .check{
+      width: 60px;
+      transition: all 1s;
+    }
+    
+    article:hover .fa-check-circle{
+      transform: rotate(0deg);
     }
 
-    .check:hover{
-      animation: checkover 1s ease-out forwards;
-    }
-
-@keyframes checkover{
+@keyframes arrivéePlats{
   from{
-    width: 1;
+    opacity: 0;
+    margin-top: 8rem;
   }
   to{
-    width: 5rem;
+    opacity: 1;
+    margin-top: 0;
   }
 }
-
-
-@keyframes rotatecheck{
-  from{
-    transform: rotate(-360deg);
-  }
-  to{
-    transform: rotate(0);
-  }
-}
-
-
 
 
                                              /*foot*/
