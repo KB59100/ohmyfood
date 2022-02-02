@@ -251,12 +251,12 @@ body{
    .container-coeur{
     position: relative;
     font-size: 25px;
-    color: linear-gradient(#FF79DA, #9356DC);
    }
    .coeur-plein{
      position:absolute;
   transform:scale(0);
      transition-duration: 1000ms;
+     color: linear-gradient(#FF79DA, #9356DC);
    }
 
    .container-coeur:hover .coeur-plein {
@@ -282,16 +282,19 @@ body{
        color: #0c8e6e;
      }
      .paddingH4{
-      
        color: black;
      }
      p{
        color: black;
+       margin-left: 10px;
      }
      h5{
        color: black;
        line-height: 0;
-      
+       font-weight: bold;
+       font-size: 18px;
+       margin-bottom: 0;
+       margin-left: 10px;
      }
    }
    img{                 
@@ -309,7 +312,7 @@ ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 li{
   width: 300px;
@@ -337,13 +340,18 @@ article{
  margin-right: 4rem;
  margin-left: 4rem;
 }
-
+}
+.btn{
+  width: 40%;
 }
   }
 @media screen and (min-width:1360px) { 
   .background article{
     margin-right: 10rem;
     margin-left: 10rem;
+  }
+  .btn{
+    width: 30%;
   }
 }
 
@@ -367,13 +375,14 @@ footer{
     color: white;
     font-size: 24px;
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 0 10px;
     padding: 1.5rem 1rem 0 1rem;
   }
   p{
     color: white;
     font-family : 'Roboto', sans-serif ;
     padding-left: 1rem;
+    margin-left: 10px;
   }
   a{
     color: white;

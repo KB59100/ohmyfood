@@ -292,7 +292,6 @@ article .fa-heart {
 article .container-coeur {
   position: relative;
   font-size: 25px;
-  color: linear-gradient(#FF79DA, #9356DC);
 }
 
 article .coeur-plein {
@@ -301,6 +300,7 @@ article .coeur-plein {
           transform: scale(0);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 
 article .container-coeur:hover .coeur-plein {
@@ -334,11 +334,16 @@ article .restaurant-description .paddingH4 {
 
 article .restaurant-description p {
   color: black;
+  margin-left: 10px;
 }
 
 article .restaurant-description h5 {
   color: black;
   line-height: 0;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 article img {
@@ -362,9 +367,8 @@ article img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   li {
     width: 300px;
@@ -405,12 +409,18 @@ article img {
     margin-right: 4rem;
     margin-left: 4rem;
   }
+  .btn {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 1360px) {
   .background article {
     margin-right: 10rem;
     margin-left: 10rem;
+  }
+  .btn {
+    width: 30%;
   }
 }
 
@@ -441,7 +451,7 @@ footer h6 {
   color: white;
   font-size: 24px;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 1.5rem 1rem 0 1rem;
 }
 
@@ -449,6 +459,7 @@ footer p {
   color: white;
   font-family: 'Roboto', sans-serif;
   padding-left: 1rem;
+  margin-left: 10px;
 }
 
 footer a {

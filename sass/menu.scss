@@ -28,7 +28,6 @@ body{
     font-size: 24px;
     font-weight: 400;
     margin: 0;
-
 }
 
 h1{
@@ -52,12 +51,14 @@ align-items: center
 .container-coeur{
   position: relative;
   font-size: 25px;
-  color: linear-gradient(#FF79DA, #9356DC);
- }
+  /*color: linear-gradient(#FF79DA, #9356DC);*/
+   }
+
  .coeur-plein{
    position:absolute;
 transform:scale(0);
    transition-duration: 1000ms;
+   color:linear-gradient(#FF79DA, #9356DC);
  }
 
  .container-coeur:hover .coeur-plein {
@@ -106,7 +107,7 @@ main{
 
 
 h2{
-  margin: 0;
+  margin: 0 0 10px 10px;
   padding: 2rem 0;
   font-size: 1.2rem;
   font-weight: normal;
@@ -127,6 +128,7 @@ article{
   .menu{
     width: 130px;
     flex: 1;
+    margin-left: 10px;
   p{
     white-space: nowrap; /*pour qu'il ny ai pas de retour a la ligne si texte trop long*/
     overflow: hidden; /*pour couper le texte si trop long*/
@@ -194,13 +196,14 @@ footer{
     color: white;
     font-size: 24px;
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 0 10px;
     padding: 1.5rem 1rem 0 1rem;
   }
   p{
     color: white;
     font-family : 'Roboto', sans-serif ;
     padding-left: 1rem;
+    margin-left: 10px;
   }
   a{
     color: white;
@@ -210,6 +213,34 @@ footer{
     padding-right: 0.5rem;
     padding-left: 0.3rem;
   }
+}
+
+
+
+@media screen and (min-width:768px) { 
+  .btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    button{
+      width: 30%;
+    }
+  }
+  section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    h2{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+    }
+    article{
+      width: 30%;
+    }
+  }
+  
 }
 
 
