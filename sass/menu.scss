@@ -58,7 +58,9 @@ align-items: center
    position:absolute;
 transform:scale(0);
    transition-duration: 1000ms;
-   color:linear-gradient(#FF79DA, #9356DC);
+   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
  }
 
  .container-coeur:hover .coeur-plein {
@@ -67,6 +69,7 @@ transform:scale(0);
 
  .coeur-vide{
   transition-duration: 1000ms;
+  color: black;
  }
 
  .container-coeur:hover .coeur-vide {
@@ -238,6 +241,12 @@ footer{
     }
     article{
       width: 30%;
+    }
+  }
+  .divCoeur{
+    justify-content: center;
+    h1{
+      margin-right: 15px;
     }
   }
   
