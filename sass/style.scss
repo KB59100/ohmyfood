@@ -109,10 +109,10 @@ body{
     text-align: center;
     font-size: 25px;
     font-weight: 900;
-    width: 80%;
+    /*width: 80%;*/
     margin: 0;
     padding: 1.5em 1em 0 1em;
-    font-family : 'Shrikhand', cursif ;
+    font-family : 'Roboto', sans-serif ;
   }
 
   aside{
@@ -251,6 +251,7 @@ body{
    .container-coeur{
     position: relative;
     font-size: 25px;
+    padding-right: 10px;
    }
    .coeur-plein{
      position:absolute;
